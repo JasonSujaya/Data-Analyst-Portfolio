@@ -1,0 +1,16 @@
+# Exploring The Prosper Loan Dataset
+## by Jason Sujaya
+
+## Dataset
+
+> The Dataset is derived from Prosper Loan. It contains 113,917 loans with different features associated with a loan such as it's APR, loan amount, etc. In this investigation, we are interested to understand factors that influence the APR of a loan. Key terminologies could be accessed with this link : https://docs.google.com/spreadsheets/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit#gid=0
+
+## Summary of Findings
+
+> In the exploration, we have to first understand several characteristic of the dataset. Many of the loan are often taken by people with a monthly income of less than 30k. Most loans are ussually 36 months or 60 months in term and APR would range from 0.5% - 4% of the loan amount. The key relationship which drives the value of APR in a loan is the prosper related varaible such as the Prosperscore or the ProsperRating. This is especially eveident in the prosperscore because the concentratation of low/ high APR when they belong to certain score (e.g 8 has 1.5% APR, while 4 has 2.5%). Using simple correlation, APR is negatively correlated with the prosper score (-0.6) which means the lower the APR (better, cheaper loan), the higher the prospers score is! Furthermore, the prosper rating (which rates users, classifying them into AA, A, B, etc) also shows similar relationship like the prosperscore. For instance those with AA are likely going to receive an APR around 1%- 2% while those with the lowest are likely have more. 
+
+> On the other hand, another interesting feature is the amount of loan. In the observation, the larger the loan the more the APR will decrease but this is likely because people may be giving large loan to lower risk people. When combined with the analysis of prosperscore, larger loans are always above a B rating. The better the prosper score, the lower the APR is if the amount of loan is the same! Further analysis shows some more interesting factors such as how with the same prosper rating, different employment status have slightly different APR average but this is not a major contributor to the APR.
+
+## Key Insights for Presentation
+
+> For the presentation, I focused on explaining key features and characteristic of APR and it's relationship with high impacting variable. This is divided into 3 parts. The first part uses univariate charts to explore the distribution of the variables such as APR, Loan amount, Monthly Income Distribution and Terms of Loan (duration)! This is done to explain the characteristic of the dataset. The second part uses bivariate charts which explores the overview of relationship amongst 2 variables mentioned above. To discover interesting relationship, I start by creating a plot matrix and assess relationships through a corelation matrix. I based my decision to explain only those with significant corelation. Finally, after discovering explaining some key interesting relationship, in the third part of the presentation we show how such insights could be stregthened by introducing a 3rd variable through multivariate visualization tools! I've made sure to use different charts to explain different aspect that I'd like to show about the data!
